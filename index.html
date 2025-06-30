@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!---->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="img/exit.png" alt="SALIR" class="iconmenu" loading="lazy" decoding="async"></a></li>
+            <li><a href="#acercadenosotros">Acerca de nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#avisodeprivacidad">Privacidad</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#footer">Mas</a></li>
+        </ul>
+        <ul class="showingbar">
+            <li><a href="#">PEALI</a></li>
+            <li class="hideOnmobile"><a href="#acercadenosotros">Acerca de nosotros</a></li>
+            <li class="hideOnmobile"><a href="#servicios">Servicios</a></li>
+            <li class="hideOnmobile"><a href="#avisodeprivacidad">Privacidad</a></li>
+            <li class="hideOnmobile"><a href="#contacto">Contacto</a></li>
+            <li class="hideOnmobile"><a href="#footer">Mas</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img/plantmenu.png" alt="MENU" class="iconmenu" loading="lazy" decoding="async"></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar (){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+<!---->
     <header>
         <h1 id="inicio">PEALI</h1>
         <img src="img/pealilogo2.png" alt="Logo PEALI" class="iconpeali" loading="lazy">
@@ -91,7 +122,7 @@
             </div>
         </div>
         <div class="container3">
-            
+
         </div>
         <div class="container4">
 
@@ -346,7 +377,7 @@
             bienestar en el entorno laboral, asistiéndote en cada paso del proceso de evaluación.</h3>
     </div>
     <footer>
-        <div class="footercontainer">
+        <div class="footercontainer" id="footer">
             <h3>PEALI</h3>
             <ul>
                 <a href="#inicio"><li>Inicio</li></a>
