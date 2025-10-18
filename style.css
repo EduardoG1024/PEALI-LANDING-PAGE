@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    background: linear-gradient(90deg, #21263a, #157954);
+}
+.icon1{
+    width: 100px;
+}
+h1{
+    color: #fff;
+    font-family: "Comic Neue", cursive;
+    margin: 10px;
+    font-style: normal;
+}
+h3{
+    color: #fff;
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+    margin: 10px;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin: 8px;
+    font-size: 17px;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+hr{
+    width: 70%;
+}
+label{
+    color: #fff;
+    margin: 10px;
+}
+ul{
+    padding: 0;
+}
+li{
+    color: #fff;
+    list-style-type: none;
+    margin: 5px;
+    font-size: 15px;
+}
+a{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+/*-----NAVBAR-----*/
+nav{
+    width: 95%;
+    background-color: transparent;
+    margin: 10px;
+    box-shadow: 0px 0px 30px #000;
+    border-radius: 10px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+nav li:first-child{
+    margin-right: auto;
+    font-size: 30px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #157954;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnmobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 60%;
+    }
+}
+/*-----REDES SOCIALES PEALI-----*/
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 50px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 30px #000;
+}
+.iconfacebook{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 8px;
+    animation-name: redfacebook;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes redfacebook {
+    0%  {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1);}
+    100%{transform: scale(1);}
+}
+.iconinstagram{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 8px;
+    animation-name: redfacebook;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes redinstagram {
+    0%  {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1);}
+    100%{transform: scale(1);}
+}
+.iconwhatsapp{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 8px;
+    animation-name: redfacebook;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes redwhatsapp {
+    0%  {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1);}
+    100%{transform: scale(1);}
+}
+.imgPEALI{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.iconmenu{
+    width: 40px;
+    height: 40px;
+}
+/*-----CONTENEDOR MAIN-----*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+}
+/*-----BANNER PRINCIPAL-----*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url('img/pexels-krystian-beben-603997-25886322.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 10px 10px 40px #000;
+}
+
+.iconpeali{
+    width: 200px;
+    margin: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*-----CONTENIDO PRINCIPAL-----*/
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+}
+.iconabsolute{
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.3;
+
+}
+/*-----ETIQUETAS-----*/
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 100%;
+    height: fit-content;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    background-color: #918575;
+    box-shadow: 10px 10px 40px #000;
+}
+/*-----SERVICIOS Y CALIDAD-----*/
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+}
+.boxcontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+}
+/*-----AVISO DE PRIVACIDAD-----*/
+.iconprivacidad{
+    width: 50px;
+    height: 50px;
+}
+.container5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 600px;
+    margin: 10px;
+    overflow: auto;
+    border: #d0c9c0 solid 2px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+}
+.container5::-webkit-scrollbar{
+    display: none;
+}
+.boxprivacidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #6d8b74;
+    box-shadow: 0px 0px 20px #000;
+}
+.imgflecha{
+    width: 40px;
+    height: 40px;
+}
+/*-----FORMULARIO PEALI-----*/
+form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+    background-image: url('img/pexels-rpnickson-2559941.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.inform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+input{
+    color: #fff;
+    width: 250px;
+    height: 25px;
+    margin: 10px;
+    border: #fff solid 2px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+textarea{
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    border: #fff solid 2px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+button{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: #fff solid 2px;
+    border-radius: 20px;
+    background-color: #156f69;
+    color: #fff;
+}
+button:hover{
+    background-color: #062220;
+}
+/*-----CONTAINER 6-----*/
+.container6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+}
+/*-----FOOTER-----*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    background-color: #3d543fc3;
+}
+.footercontainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    border: #000 solid 1px;
+}

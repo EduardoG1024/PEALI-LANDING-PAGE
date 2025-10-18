@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEALI</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="dashboard.js" defer></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Huninn&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>PEALI - DOCS</h1>
+        <div id="user-top"></div>
+    </header>
+
+    <main>
+        <div class="ContainerDownloads">
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NOM-011-STPS-2001</h3>
+                <a href="docs/3.-1 NOM-011-STPS-2001-20250401T232225Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NOM-015-STPS-2001</h3>
+                <a href="docs/3.-2 NOM-015-STPS-2001-20250401T232352Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NOM-022-STPS-2015</h3>
+                <a href="docs/3.-3 NOM-022-STPS-2015-20250401T232354Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NOM-024-STPS-2001</h3>
+                <a href="docs/3.-4 NOM-024-STPS-2001-20250401T232357Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NOM-025-STPS-2008</h3>
+                <a href="docs/3.-5 NOM-025-STPS-2008-20250401T232400Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NOM-081-SEMARNAT-1994</h3>
+                <a href="docs/3.-6 NOM-081-SEMARNAT-1994-20250401T232408Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">NADF-005-AMBT-2013</h3>
+                <a href="docs/3.-7 NADF-005-AMBT-2013-20250401T232411Z-001.zip" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerA">
+                <h3 class="InfoDownload">Solicitud de Cotizacion y OT</h3>
+                <a href="docs/Solicitud de cotizacion y OT.pdf" download><img src="icons/download.png" alt="Descargar" class="IconDownload"></a>
+            </div>
+            <div class="ContainerAdvertencia">
+                <p class="WarningDownload">
+                    Advertencia la ultima modificacion de los
+                    archivos es de "<strong>"01-Abr-2025"</strong>"
+                </p>
+            </div>
+        </div>
+        <!---->
+        <div class="ContainerUploads">
+            <h2 class="subirArchivos">Subir Archivos</h2>
+            <img src="icons/ventana.png" alt="Subir" class="IconCloud" loading="lazy" decoding="async">
+        </div>
+        <!---->
+        <div class="ContainerAnuncios">
+            <h2>🚨Anuncios🚨</h2>
+            <div id="mensajesContenedor"></div>
+            <h3 id="escriba">Escriba un anuncio o mensaje</h3>
+            <div id="statusmensaje"></div>
+            <textarea id="mensajeTexto" placeholder="Nuevo mensaje/anuncio..."></textarea>
+            <button id="publicar">Publicar</button>
+        </div>
+    </main>
+</body>
+</html>

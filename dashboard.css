@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dde6ed;
+}
+h1, h2, h3, h4, p{
+    margin: 10px;
+    color: #ece7e2;
+    font-family: "Comic Neue", cursive;
+}
+h3, h4, p{
+    color: #144d4d;
+}
+#user-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d8391;
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+    color: #ece7e2;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    background-color: #144d4d;
+}
+/**/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+}
+/**/
+.ContainerDownloads{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 630px;
+    margin: 10px 0 0 10px;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #9db2bf;
+}
+.ContainerA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    height: fit-content;
+}
+.InfoDownload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dde6ed;
+}
+.IconDownload{
+    width: 35px;
+    height: 40px;
+    object-fit: cover;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #144d4d;
+}
+.WarningDownload{
+    color: #fff;
+    padding: 5px;
+    background-color: #b00e0e;
+    border-radius: 5px;
+}
+/**/
+.ContainerUploads{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 630px;
+    margin: 10px 0 0 0;
+    border-radius: 4px;
+    background-color: #9db2bf;
+}
+.subirArchivos{
+    color: #144d4d;
+}
+.IconCloud{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+/**/
+.ContainerAnuncios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    height: 630px;
+    gap: 5px;
+    margin: 10px 0 0 0;
+    border-radius: 4px;
+    background-color: #9db2bf;
+}
+#escriba{
+    display: none;
+}
+#mensajesContenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    overflow: scroll;
+    background-color: #859aa7;
+}
+#mensajesContenedor::-webkit-scrollbar{
+    display: none;
+}
+#mensajeTexto{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: #7d8391;
+}
+#publicar{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #144d4d;
+    color: #dde6ed;
+    cursor: pointer;
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+}
+.Box{
+    width: 95%;
+    height: fit-content;
+    color: #dde6ed;
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #7d8391;
+}

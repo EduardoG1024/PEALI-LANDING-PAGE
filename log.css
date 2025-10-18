@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #575965;
+}
+h1, h2, p{
+    font-family: "Comic Neue", cursive;
+    color: aliceblue;
+}
+label{
+    font-family: "Fredoka", sans-serif;
+    color: aliceblue;
+}
+.peali-logo{
+    width: 300px;
+    height: fit-content;
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
+}
+#username, #password{
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #bfc0d1;
+}
+#Entra{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    transition: ease-in .5s;
+    cursor: pointer;
+    font-family: "Fredoka", sans-serif;
+    background-color: #27e9b5;
+}
+#Entra:hover{
+    width: 200px;
+}
