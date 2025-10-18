@@ -1,7 +1,7 @@
 const OpenOneDrive = document.querySelector('.IconCloud');
 
 function openOneDrive() {
-    window.open("https://1drv.ms/f/c/193cb13e0f350610/ElOrYJprCZJMrROQPy4aG_IB_WUD-UA254Anp62zqYAMww?e=ehXsDWhttps://1drv.ms/f/c/193cb13e0f350610/ElOrYJprCZJMrROQPy4aG_IB_WUD-UA254Anp62zqYAMww?e=ehXsDW", "_blank", "width=600,height=400")
+    window.open("https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xOTNjYjEzZTBmMzUwNjEwL0VsT3JZSnByQ1pKTXJST1FQeTRhR19JQlgtampxNDR0VF91REo2dkRtZVloSlE%5FZT1LZ0YxTUY&id=193CB13E0F350610%21s9a60ab53096b4c92ad13903f2e1a1bf2&cid=193CB13E0F350610", "_blank", "width=600,height=400")
 };
 OpenOneDrive.addEventListener("click", () => {
     openOneDrive();
