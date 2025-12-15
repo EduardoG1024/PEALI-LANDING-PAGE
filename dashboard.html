@@ -60,8 +60,19 @@
         </div>
         <!---->
         <div class="ContainerUploads">
-            <h2 class="subirArchivos">Subir Archivos</h2>
+            <h2 class="subirArchivos">Subir Archivos OneDrive</h2>
             <img src="icons/ventana.png" alt="Subir" class="IconCloud" loading="lazy" decoding="async">
+            <br>
+            <hr>
+            <!--DEMO SUP UPLOAD ARCHIVOS-->
+            <div class="ContainerUploadsSup">
+                <h2 class="subirArchivos">Subir Archivos Demo</h2>
+                <label for="uploadFile" class="uploadFiles">Elegir Archivo</label>
+                <input type="file" name="uploadFile" id="uploadFile" accept=".pdf, .doc, .docx, .xls, .xlsx">
+                <button id="uploadBtn">ENTREGAR ARCHIVO</button>
+                <p><strong>Solo se aceptan archivos PDF, WORD, EXCEL</strong></p>
+                <p><strong>Subir archivos por Separado</strong></p>
+            </div>
         </div>
         <!---->
         <div class="ContainerAnuncios">
@@ -71,6 +82,10 @@
             <div id="statusmensaje"></div>
             <textarea id="mensajeTexto" placeholder="Nuevo mensaje/anuncio..."></textarea>
             <button id="publicar">Publicar</button>
+        </div>
+        <!---->
+        <div class="ContainerDocsPeali">
+            <h2 class="subirArchivos">ARCHIVOS SUBIDOS</h2>
         </div>
     </main>
     <script>

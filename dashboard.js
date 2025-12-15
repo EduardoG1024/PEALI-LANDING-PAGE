@@ -20,15 +20,16 @@ const mostrador = document.getElementById('mensajesContenedor');
 const statusmensaje = document.getElementById('statusmensaje');
 const userBar = document.getElementById('user-top');
 const escribe = document.getElementById('escriba');
+const ContainerDocsPeali = document.querySelector('.ContainerDocsPeali');
 
 const UserAdmin = sessionStorage.getItem('admin');
 if (UserAdmin == 'PabloIniestra') {
     publicarBtn.style.display = 'flex';
-    userBar.innerHTML = `Bienvenido @${UserAdmin}`;
+    userBar.innerHTML = `Feliz Navidad!!! @${UserAdmin}`;
     escribe.style.display = 'flex';
-
+    ContainerDocsPeali.style.display = 'flex';
 } else {
-    userBar.innerHTML = `Bienvenido @${UserAdmin}`;
+    userBar.innerHTML = `Feliz Navidad!!! @${UserAdmin}`;
 }
 
 
@@ -63,3 +64,75 @@ async function verMensajes() {
     })
 }
 verMensajes();
+
+const uploadBtn = document.getElementById('uploadBtn');
+
+uploadBtn.addEventListener('click', async () => {
+    const uploadFile = document.getElementById('uploadFile');
+    const file = uploadFile.files[0];
+
+    if (!file) {
+        alert('Elige un Archivo');
+        return;
+    } else {
+        const path = `${sessionStorage.getItem('admin')}-${file.name}`;
+
+        const { data, error } = await supabase
+            .storage
+            .from('pealiD')
+            .upload(path, file, {
+                cacheControl: '3600',
+                upsert: false
+            });
+
+        if (error) {
+            console.error(error);
+            alert('Error al subir archivo: ' + error.message);
+        } else {
+            alert('Archivo subido con éxito');
+        }
+    }
+});
+
+
+async function seePeali() {
+    const { data, error } = await supabase
+    .storage
+    .from('pealiD')
+    .list('', {
+        offset: 0,
+        sortBy: { column: 'created_at', order: 'desc' }
+    })
+    data.forEach(files => {
+        const box = document.createElement('div');
+        const deleteBox = document.createElement('button');
+        box.className = 'boxDown';
+        box.textContent = files.name;
+        deleteBox.textContent = 'Eliminar Archivo';
+        deleteBox.className = 'deleteBox';
+
+        box.addEventListener('click', () => {
+            const {data} = supabase
+            .storage
+            .from('pealiD')
+            .getPublicUrl(files.name);
+        const link = document.createElement('a');
+        link.href = data.publicUrl;
+        link.download = files.name;
+        link.click();
+        });
+
+        deleteBox.addEventListener('click', () => {
+            const {data, error} = supabase
+            .storage
+            .from('pealiD')
+            .remove(files.name)
+            alert(`Se ELIMINÓ: ${files.name}`);
+            window.location.reload();
+        });
+
+        ContainerDocsPeali.appendChild(box);
+        ContainerDocsPeali.appendChild(deleteBox);
+    });
+}
+seePeali();
