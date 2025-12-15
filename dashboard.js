@@ -32,7 +32,6 @@ if (UserAdmin == 'PabloIniestra') {
     userBar.innerHTML = `Feliz Navidad!!! @${UserAdmin}`;
 }
 
-
 // Subir mensaje
 publicarBtn.addEventListener('click', async() => {
     const mensajeTexto = document.getElementById('mensajeTexto').value.trim();

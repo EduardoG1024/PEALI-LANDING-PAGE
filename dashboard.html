@@ -89,9 +89,12 @@
         </div>
     </main>
     <script>
-        if (sessionStorage.getItem('admin') == '') {
+        const UserAdminn = sessionStorage.getItem('admin');
+        if (!UserAdminn) {
             window.location = 'log.html';
-        };
+        }
+        console.log(UserAdminn)
+
     </script>
 </body>
 </html>
