@@ -1,7 +1,4 @@
-const supabase = window.supabase.createClient(
-    'https://nptkkyutlmvmvjiaigqf.supabase.co',
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5wdGtreXV0bG12bXZqaWFpZ3FmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA3MTg4MjEsImV4cCI6MjA3NjI5NDgyMX0.rEfOUxO1ElubL20lX95QQ5N0q0ID5j4j-AMvyp_fWXo'
-);
+import { supabase } from "./key.js";
 
 const LoginBtn = document.getElementById('Entra');
 const statusUser = document.getElementById('statusUser');
@@ -29,3 +26,4 @@ LoginBtn.addEventListener('click', async (e) => {
         statusUser.textContent = 'Usuario o contraseña incorrectos';
     }
 });
+console.log(sessionStorage.getItem('admin'));

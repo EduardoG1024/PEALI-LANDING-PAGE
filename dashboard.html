@@ -6,8 +6,9 @@
     <title>PEALI</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="dashboard.js" defer></script>
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="key.js" type="module"></script>
+    <script src="dashboard.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Huninn&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 </head>
@@ -60,6 +61,7 @@
         </div>
         <!---->
         <div class="ContainerUploads">
+            <p><strong>Subir Archivos en OneDrive y en la parte Inferior (Demo)</strong></p>
             <h2 class="subirArchivos">Subir Archivos OneDrive</h2>
             <img src="icons/ventana.png" alt="Subir" class="IconCloud" loading="lazy" decoding="async">
             <br>
@@ -72,6 +74,7 @@
                 <button id="uploadBtn">ENTREGAR ARCHIVO</button>
                 <p><strong>Solo se aceptan archivos PDF, WORD, EXCEL</strong></p>
                 <p><strong>Subir archivos por Separado</strong></p>
+                <p><strong>Limite de tamaño por Archivo 50mb</strong></p>
             </div>
         </div>
         <!---->
