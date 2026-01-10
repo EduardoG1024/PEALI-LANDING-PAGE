@@ -24,11 +24,11 @@ const ContainerDocsPeali = document.querySelector('.ContainerDocsPeali');
 const UserAdmin = sessionStorage.getItem('admin');
 if (UserAdmin == 'PabloIniestra') {
     publicarBtn.style.display = 'flex';
-    userBar.innerHTML = `Feliz Navidad!!! @${UserAdmin}`;
+    userBar.innerHTML = `Bienvenido @${UserAdmin}`;
     escribe.style.display = 'flex';
     ContainerDocsPeali.style.display = 'flex';
 } else {
-    userBar.innerHTML = `Feliz Navidad!!! @${UserAdmin}`;
+    userBar.innerHTML = `Bienvenido @${UserAdmin}`;
 }
 
 // Subir mensaje
